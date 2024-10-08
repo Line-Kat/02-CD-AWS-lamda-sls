@@ -21,3 +21,4 @@ jobs:
           aws-region: us-west-1
       - run: sam build --use-container
       - run: sam deploy --no-confirm-changeset --no-fail-on-empty-changeset --stack-name sam-sentiment-lika027  --s3-bucket lambda-bucket-grb  --capabilities CAPABILITY_IAM --region eu-west-1
+      - run: aws s3 ls
